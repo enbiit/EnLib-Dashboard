@@ -2,251 +2,345 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chart.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="test.css">
+
+
 </head>
 
-<body>
 
 
+<body style="background-color:rgb(205, 202, 202) ;">
 
+  <nav class="sidebar close">
+    
+    <header>
+        <div class="image-text">
+            <span class="image">
+                <!--<img src="logo.png" alt="">-->
+               
+            </span>
 
-    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-        aria-labelledby="staticBackdropLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="staticBackdropLabel" style="color:blue">angulusT Library</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-
-                <ul class="features-list">
-                    <li class="features-item inbox active">
-                        <span class="material-symbols-outlined">
-                            dashboard
-                        </span>Dashboard
-
-                    </li>
-
-                    <li class="features-item draft">
-
-                        <span class="material-symbols-outlined">
-                            library_books
-                        </span>Books
-
-                    </li>
-
-                    <li class="features-item star">
-                        <span class="material-symbols-outlined">
-                            menu_book
-                        </span>Books Circulation
-
-                    </li>
-                    <li class="features-item sent">
-                        <span class="material-symbols-outlined">
-                            groups
-                        </span>Members
-
-                    </li>
-                    <li class="features-item trash">
-                        <span class="material-symbols-outlined">
-                            difference
-                        </span>Genres
-
-                    </li>
-                    <li class="features-item spam">
-                        <span class="material-symbols-outlined">
-                            attribution
-                        </span>Authors
-
-                    </li>
-
-                    <li class="features-item spam">
-                        <span class="material-symbols-outlined">
-                            signature
-                        </span>Publisher
-
-                    </li>
-
-                    <li class="features-item spam">
-                        <span class="material-symbols-outlined">
-                            collections_bookmark
-                        </span>Book Languages
-
-                    </li>
-
-                    <li class="features-item spam">
-                        <span class="material-symbols-outlined">
-                            style
-                        </span>Tags
-
-                    </li>
-
-                    <li class="features-item spam">
-                        <span class="material-symbols-outlined">
-                            group
-                        </span>Users
-
-                    </li>
-                </ul>
+            <div class="text logo-text">
+                <span class="name" style="color: blue;">angulusT Library</span>
+                
             </div>
         </div>
+
+        <i class='bx bx-chevron-right toggle' style="background-color: rgb(209, 123, 11);">
+          <span class="material-symbols-outlined bx bx-bell icon" style="font-size: 200%; color: rgb(255, 255, 255);">
+            chevron_right
+            </span>
+        </i>
+    </header>
+
+    <div class="menu-bar">
+        <div class="menu">
+            <ul class="menu-links" style="padding-left: 0px;">
+                <li class="nav-link">
+                    <a href="#">
+                      <span class="material-symbols-outlined bx bx-bell icon" style="font-size: 200%;color:rgb(209, 123, 11)">
+                        speed
+                        </span>
+                        <span class="text nav-text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                        <!-- <i class='bx bx-bar-chart-alt-2 icon' ></i> -->
+                        <span class="material-symbols-outlined bx bx-bar-chart-alt-2 icon" style="font-size: 200%;">
+                          library_books
+                          </span>
+                        <span class="text nav-text">Books</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                        <!-- <i class='bx bx-bell icon'></i>
+                         -->
+                         <span class="material-symbols-outlined bx bx-bell icon" style="font-size: 200%;">
+                          local_library
+                          </span>
+                        <span class="text nav-text">Books Circulation</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                      <span class="material-symbols-outlined bx bx-bell icon" style="font-size: 200%;">
+                        groups
+                        </span>
+                        <span class="text nav-text">Members</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                      <span class="material-symbols-outlined bx bx-bell icon" style="font-size: 200%;">
+                        dynamic_feed
+                        </span>
+                        <span class="text nav-text">Genres</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                      <span class="material-symbols-outlined bx bx-bell icon" style="font-size: 200%;">
+                        group
+                        </span>
+                        <span class="text nav-text">Authors</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                  <a href="#">
+                    <span class="material-symbols-outlined bx bx-bell icon" style="font-size: 200%;">
+                      demography
+                      </span>
+                      <span class="text nav-text">Publishers</span>
+                  </a>
+              </li>
+              <li class="nav-link">
+                <a href="#">
+                  <span class="material-symbols-outlined bx bx-bell icon" style="font-size: 200%;">
+                    public
+                    </span>
+                    <span class="text nav-text">Book Languages</span>
+                </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                  <span class="material-symbols-outlined bx bx-bell icon" style="font-size: 200%;">
+                    sell
+                    </span>
+                  <span class="text nav-text">Tags</span>
+              </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <span class="material-symbols-outlined bx bx-bell icon" style="font-size: 200%;">
+                person
+                </span>
+                <span class="text nav-text">Users</span>
+            </a>
+        </li>
+
+            </ul>
+        </div>
+
+        <!-- <div class="bottom-content">
+            
+
+        </div> -->
+        
     </div>
 
-    <nav class="navbar navbar-dark">
-        <div class="container-fluid">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-                aria-controls="staticBackdrop">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Dropdown -->
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" style="background: none; color: black; border: none; font-weight: normal;">
-                    LMS Admin
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <hr>
+</nav>
+<!-- <section class="home">
+  <div class="text">Dashboard Sidebar</div>
+</section> -->
 
-    <div class="d-flex flex-row mb-3" style="padding: 2%;">
 
-        <div class="p-1" style="background-color:blueviolet">
-            <div class="inner">155<span class="material-symbols-outlined">
-                    auto_stories
-                </span>
-                <div class="name">Books</div>
-            </div>
-
-        </div>
-
-        <div class="p-1" style="background-color:darkgreen">
-            <div class="inner">289<span class="material-symbols-outlined">
-                    groups
-                </span>
-                <div class="name">Members</div>
-            </div>
-
-        </div>
-        <div class="p-1" style="background-color:deepskyblue">
-            <div class="inner">31<span class="material-symbols-outlined">
-                    local_library
-                </span>
-                <div class="name">Issued Books</div>
-            </div>
-        </div>
-
-        <div class="p-1" style="background-color:chocolate">
-            <div class="inner">25<span class="material-symbols-outlined">
-                    local_library
-                </span>
-                <div class="name">Reserved Books</div>
-            </div>
-        </div>
-
-        <div class="p-1" style="background-color:brown">
-            <div class="inner">29<span class="material-symbols-outlined">
-                    local_library
-                </span>
-                <div class="name">Overdue Books</div>
-            </div>
-        </div>
-
+  <nav class="navbar bg-body-tertiary" style="margin: 0; padding: 1%;">
+    <div class="container-fluid" style="background-color: rgb(255, 250, 250);">
+      
+      <div class="dropdown-center">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:transparent; color: black; border: none; ">
+          LMS Admin
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Action two</a></li>
+          <li><a class="dropdown-item" href="#">Action three</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="d-flex flex-row-reverse" style="padding-left:
-    2%; padding-right: 2%;">
-        <div class="p-3">Books Circulation</div>
-        <div class="p-3">Books By Genres</div>
-
-    </div>
-    <div class="d-flex flex-row-reverse" style="padding-left: 2%; padding-right: 2%;">
-
-        <div class="p-2">
-            <div class="wrapper">
-                <!-- pie chart entries -->
-                <div class="pie-wrap">
-                    <div class="light-yellow entry">
-                        <p>25%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                    <div class="sky-blue entry">
-                        <p>25%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                    <div class="pink entry">
-                        <p>12.5%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                    <div class="purple entry">
-                        <p> 12.5%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                    <div class="green entry">
-                        <p> 12.5%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                    <div class="wheat entry">
-                        <p> 12.5%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                </div>
+  </nav>
 
 
+
+
+  <!-- main grids -->
+  <!-- <center> -->
+    <div class="container text-center" style="margin-right:50px;">
+      <div class="row">
+        <div class="col-sm" style="background-color: blueviolet;">
+          <div class="right-left top2rl">
+            <div class="up-down">
+              <div class="up">
+                155
+              </div>
+              <div class="down">
+                Books
+              </div>
             </div>
-        </div>
-        <div class="p-2">
-            <div class="wrapper">
-                <!-- pie chart entries -->
-                <div class="pie-wrap">
-                    <div class="light-yellow entry">
-                        <p>25%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                    <div class="sky-blue entry">
-                        <p>25%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                    <div class="pink entry">
-                        <p>12.5%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                    <div class="purple entry">
-                        <p> 12.5%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                    <div class="green entry">
-                        <p> 12.5%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                    <div class="wheat entry">
-                        <p> 12.5%</p>
-                        <p class="entry-value">things</p>
-                    </div>
-                </div>
-
-
+            <div class="icon">
+              <span class="material-symbols-outlined" style="font-size: 500%;">
+                library_books
+                </span>
             </div>
+          </div>
         </div>
+        <div class="col-sm" style="background-color: green;">
+          <div class="right-left top2rl">
+            <div class="up-down">
+              <div class="up">
+                289
+              </div>
+              <div class="down">
+                Members
+              </div>
+            </div>
+            <div class="icon">
+              <span class="material-symbols-outlined" style="font-size: 500%;">
+                groups
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm" style="background-color: rgb(30, 214, 214);">
+          <div class="right-left bottom3rl" >
+            <div class="up-down">
+              <div class="up">
+                31
+              </div>
+              <div class="down">
+                Issued<br>Books
+              </div>
+            </div>
+            <div class="icon">
+              <span class="material-symbols-outlined" style="font-size: 500%;">
+                local_library
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm" style="background-color: rgb(216, 213, 31);">
+          <div class="right-left bottom3rl" >
+            <div class="up-down">
+              <div class="up">
+                25
+              </div>
+              <div class="down">
+                Reserved<br>Books
+              </div>
+            </div>
+            <div class="icon">
+              <span class="material-symbols-outlined" style="font-size: 500%;">
+                local_library
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm" style="background-color: rgb(202, 44, 44);">
+          <div class="right-left bottom3rl">
+            <div class="up-down">
+              <div class="up">
+                29
+              </div>
+              <div class="down">
+                Overdue<br>Books
+              </div>
+            </div>
+            <div class="icon">
+              <span class="material-symbols-outlined" style="font-size: 500%;">
+                local_library
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+      </div> -->
+      <div class="row" style="margin-top: 5%;">
+        <div class="col-sm chart" style="background-color: rgb(237, 230, 230); padding: 0px;">
+          <div class="upchart">Books Circulation</div>
+          <div class="wrapper">
+            <!-- pie chart entries -->
+            <div class="pie-wrap">
+              <div class="light-yellow entry">
+                <p>25%</p>
+                <p class="entry-value">things</p>
+              </div>
+              <div class="sky-blue entry">
+                <p>25%</p>
+                <p class="entry-value">things</p>
+              </div>
+              <div class="pink entry">
+                <p>12.5%</p>
+                <p class="entry-value">things</p>
+              </div>
+              <div class="purple entry">
+                <p> 12.5%</p>
+                <p class="entry-value">things</p>
+              </div>
+              <div class="green entry">
+                <p> 12.5%</p>
+                <p class="entry-value">things</p>
+              </div>
+              <div class="wheat entry">
+                <p> 12.5%</p>
+                <p class="entry-value">things</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm chart" style="background-color: rgb(237, 230, 230); padding: 0px;">
+          <div class="upchart">Books By Genres</div>
 
+          <div class="wrapper">
+            <!-- pie chart entries -->
+            <div class="pie-wrap">
+              <div class="light-yellow entry">
+                <p>25%</p>
+                <p class="entry-value">things</p>
+              </div>
+              <div class="sky-blue entry">
+                <p>25%</p>
+                <p class="entry-value">things</p>
+              </div>
+              <div class="pink entry">
+                <p>12.5%</p>
+                <p class="entry-value">things</p>
+              </div>
+              <div class="purple entry">
+                <p> 12.5%</p>
+                <p class="entry-value">things</p>
+              </div>
+              <div class="green entry">
+                <p> 12.5%</p>
+                <p class="entry-value">things</p>
+              </div>
+              <div class="wheat entry">
+                <p> 12.5%</p>
+                <p class="entry-value">things</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  <!-- </center> -->
 
+  <script src="test.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"></script>
+  
 </body>
 
 </html>

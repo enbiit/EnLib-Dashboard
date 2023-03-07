@@ -1,0 +1,178 @@
+/* chart */
+.widget {
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 1px 0px #06060d;
+  }
+  
+  .chart-container {
+    filter: blur(0px);
+    padding: 100px;
+  }
+  
+  .shadow {
+    -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 10px 10px rgba(30, 202, 211, 0.5));
+  }
+
+  .heading{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+  }
+  .pie-wrap{
+    border: 2px solid lightgrey;
+    width: 400px;
+    height: 400px;
+    margin: 10% 50px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    color: black;
+  }
+  .pie-wrap .entry{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* the individual entries */
+  .sky-blue{
+    background-color: lightskyblue;
+    height:50%;
+    width: 50%;
+    display: block;
+  }
+  .light-yellow{
+    background-color: lightyellow;
+    height:50%;
+    width: 50%;
+  }
+  .pink{
+    background-color: pink;
+    height:50%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0%, 0% 100%);
+  }
+  .purple{
+    background-color: purple;
+    height:50%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    clip-path:polygon(0% 100%, 100% 0%, 100% 100%);
+  }
+  .green{
+    background-color: limegreen;
+    height:50%;
+    width: 50%;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    clip-path:polygon(0% 0%, 100% 0%, 100% 100%);
+  }
+  .wheat{
+    background-color: wheat;
+    height:50%;
+    width: 50%;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    clip-path:polygon(0% 0%, 100% 100%, 0% 100%);
+  }
+  
+  /* the entry text styles */
+  .pie-wrap .purple p{
+    position: absolute;
+    top: 140px;
+    color: white;
+   }
+   .pie-wrap .purple p:first-child{
+     top: 120px;
+   }
+   .pie-wrap .green p{
+     position: absolute;
+     top: 20px;
+    }
+    .pie-wrap .green p:first-child{
+     top: 0px;
+   }
+    .pie-wrap .pink p, .pie-wrap .wheat p{
+     position: absolute;
+     left: 20px;
+     top: 80px;
+    }
+   .pie-wrap .pink, .pie-wrap .wheat{
+     justify-content: flex-start;
+   }
+   .pie-wrap .pink p:first-child, .pie-wrap .wheat p:first-child{
+     top: 100px;
+   }
+  
+   /* hide food name and reveal when hovered on */
+   .entry .entry-value{
+    display: none;
+    transition: all 500ms linear;
+  }
+  .entry:hover .entry-value{
+    display: block;
+  }
+  .entry{
+    transition: all 500ms linear ;
+  }
+  .entry:hover{
+    filter: invert();
+  }
+  .upchart{
+    font-size: 200%;
+    text-align: left;
+    width:100%;
+    height: fit-content;
+    background-color: rgb(182, 187, 187);
+    color: rgb(0, 0, 0);
+    padding: 5%;
+    margin:0;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+  }
+  @media only screen and (max-width: 800px) {
+    .pie-wrap{
+        height: 40vh;
+        width: 100vw;
+    }
+    .wrapper
+    {
+      margin-top: 10vh;
+      height: 30vh;
+      padding-left: 10%;
+    }
+    .col-sm.chart{
+      height: 60vh;
+      width: fit-content;
+    }
+    .upchart{
+      font-size: 100%;
+      text-align: center;
+      width:100%;
+      height: fit-content;
+      background-color: rgb(182, 187, 187);
+      color: rgb(0, 0, 0);
+      padding: 5%;
+      margin:0;
+      border-top-right-radius: 7px;
+      border-top-left-radius: 7px;
+    }
+  }

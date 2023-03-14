@@ -45,6 +45,10 @@ color: #000000;
 
     background: #ecf1fc;
 }
+.card:hover{
+    box-shadow: 3px 5px 5px 5px rgb(191, 191, 191);
+    transition: 0.2s ease-in-out;
+}
 
 .left{
     margin-left: 2%;

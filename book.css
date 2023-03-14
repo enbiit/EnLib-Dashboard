@@ -34,6 +34,12 @@ border-radius: 10px;
 /* background-color: green; */
 background-image: url("Book\ Card\ Mini.png");
 }
+.book:hover{
+    
+        box-shadow: 3px 5px 5px 5px rgb(191, 191, 191);
+        transition: 0.2s ease-in-out;
+    
+}
 
 .writers{
     padding-top: 3%;

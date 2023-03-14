@@ -1,3 +1,7 @@
+#main{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 .idcard {
     display: flex;
     /* width: 60%; */
@@ -172,6 +176,9 @@ button {
 }
 .button2{
     margin-left: 50px;
+}
+.midweb{
+    margin-top: 10%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -375,10 +382,10 @@ button {
     }
 
     .right {
-        position: absolute;
-        left: 55px;
+        position: relative;
+        left: 0px;
         
-        top: 200px;
+        top: 0px;
         margin-left: 0px;
     }
 
@@ -523,17 +530,19 @@ button {
     }
 
     .buttons {
-        position: absolute;
-        top: 390px;
-        left: 30px;
- 
+        position: relative;
+        top: 0px;
+        left: 25px;
+        display: flex;
         margin-top: 20px;
         padding-left: 5%;
+        width: 400px;
     }
     
 
 
-    button {
+    .button1{
+        /* display: inline-block; */
         padding: 5px;
         font-family: sans-serif;
         border-radius: 10px;
@@ -541,5 +550,17 @@ button {
         font-weight: bold;
         font-size: 8px;
         border: 1px solid blue;
+        width: 100px;
+    }
+    .button2 {
+        /* display: inline-block; */
+        padding: 5px;
+        font-family: sans-serif;
+        border-radius: 10px;
+        color: #2563EB;
+        font-weight: bold;
+        font-size: 8px;
+        border: 1px solid blue;
+        width: 80px;
     }
 }

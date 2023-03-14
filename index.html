@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <!-- sidebar -->
+    <div id="mySidebar" class="sidebar" style="font-family: sans-serif;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="iconname" href="#" style="display: flex;">
+            <div class="sideicons" ><span class="material-symbols-outlined">
+                    home
+                </span></div>Dashboard
+        </a>
+        <a class="iconname" href="#" style="display: flex;">
+            <div class="sideicons"><span class="material-symbols-outlined">
+                    history
+                </span></div>History
+        </a>
+        <a class="iconname" href="#" style="display: flex;">
+            <div class="sideicons"><span class="material-symbols-outlined">
+                    bookmark
+                </span></div>Bookmark
+        </a>
+        <a class="iconname" href="#" style="display: flex;">
+            <div class="sideicons"><span class="material-symbols-outlined">
+                    currency_rupee
+                </span></div>Penalties
+        </a>
+        <a class="iconname" href="#" style="display: flex;">
+            <div class="sideicons"><span class="material-symbols-outlined">
+                    explore
+                </span></div>Explore
+        </a>
+        <a class="iconname" href="#" style="display: flex;">
+            <div class="sideicons"><span class="material-symbols-outlined">
+                    search
+                </span></div>Search
+        </a>
+        <a class="iconname" href="#" style="display: flex;">
+            <div class="sideicons"><span class="material-symbols-outlined">
+                    logout
+                </span></div>Logout
+        </a>
+
+        <div class="settings">
+            <div class="settingicon"><span class="material-symbols-outlined"
+                    style="font-size: 30px; padding-right:13px">
+                    settings
+                </span></div>Settings
+        </div>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+        <!-- <p>Content...</p> -->
+        <div class="midweb" style="padding-left: 2%; padding-top: 3%;">
+            <div class="upcontainer">
+                <div class="upperup">Currently issued books</div>
+            </div>
+            <div class="upperlow">
+                <!-- card1 -->
+                <div class="envelope">
+                    <div class="card">
+                        <div class="left"><img style="border-radius: 5px;" src="Rectangle 93.jpg" alt=""></div>
+                        <div class="right">
+
+                            <div class="book_name">Company of One</div>
+                            <div class="author">Paul Jarvis</div>
+
+                            <div class="publisher go" style="display: inline-block;">Issued by</div>
+                            <div class="pulishername" style="display: inline-block;"><a class="name">Monowar Hussain
+                                    (Librarian)
+                                </a></div>
+
+                            <div class="publish_date go" style="display: inline-block;">Issued on</div>
+                            <div class="date" style="display: inline;"><a class="name">06/01/2023</a></div>
+
+                            <div class="due" style="display: flex;">
+                                <div class="overdue go">Overdue in</div>
+                                <div class="overduein"><a class="name1">3 Days</a></div>
+                            </div>
+                        </div>
+                        <button class="renew" style="display: flex;"><span class="material-symbols-outlined"
+                                style="display: inline;">
+                                autorenew
+                            </span>
+                            <div class="renewtext" class="display:inline"></div>Renew
+                        </button>
+                    </div>
+                </div>
+
+                <!-- card2 -->
+                <div class="envelope2">
+                    <div class="card">
+                        <div class="left"><img style="border-radius: 5px;" src="Rectangle 96.png" alt=""></div>
+                        <div class="right">
+
+                            <div class="book_name">OPerating System Concepts</div>
+                            <div class="author">Abraham Silberschatz, Peter B Galvin</div>
+
+                            <div class="publisher go" style="display: inline-block;">Issued by</div>
+                            <div class="pulishername" style="display: inline-block;"><a class="name">Vigyan Shah (Asst. Librarian)
+                                </a></div>
+
+                            <div class="publish_date go" style="display: inline-block;">Issued on</div>
+                            <div class="date" style="display: inline;"><a class="name">21/02/2023</a></div>
+
+                            <div class="due" style="display: flex;">
+                                <div class="overdue go">Overdue in</div>
+                                <div class="overduein"><a class="name1">21 Days</a></div>
+                            </div>
+                        </div>
+                        <button class="renew" style="display: flex;"><span class="material-symbols-outlined"
+                                style="display: inline;">
+                                autorenew
+                            </span>
+                            <div class="renewtext" class="display:inline"></div>Renew
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2upcontainer -->
+            <div class="upperlow">
+                <!-- card1 -->
+                <div class="envelope">
+                    <div class="card">
+                        <div class="left"><img style="border-radius: 5px;" src="Rectangle 99.png" alt=""></div>
+                        <div class="right">
+
+                            <div class="book_name">Feynman Lectures on Physics</div>
+                            <div class="author">Richard P Feynman</div>
+
+                            <div class="publisher go" style="display: inline-block;">Issued by</div>
+                            <div class="pulishername" style="display: inline-block;"><a class="name">Deep Bhaishya (Asst. Librarian)
+                                </a></div>
+
+                            <div class="publish_date go" style="display: inline-block;">Issued on</div>
+                            <div class="date" style="display: inline;"><a class="name">01/03/2023</a></div>
+
+                            <div class="due" style="display: flex;">
+                                <div class="overdue go">Overdue in</div>
+                                <div class="overduein"><a class="name1">35 Days</a></div>
+                            </div>
+                        </div>
+                        <button class="renew" style="display: flex;"><span class="material-symbols-outlined"
+                                style="display: inline;">
+                                autorenew
+                            </span>
+                            <div class="renewtext" class="display:inline"></div>Renew
+                        </button>
+                    </div>
+                </div>
+
+                <!-- card2 -->
+                <div class="envelope2">
+                    <div class="card">
+                        <div class="left"><img style="border-radius: 5px;" src="Rectangle 102.png" alt=""></div>
+                        <div class="right">
+
+                            <div class="book_name">Database Management System<br>Concepts</div>
+                            <div class="author">Raghu Ramakrishnan, Johannes Gehrke</div>
+
+                            <div class="publisher go" style="display: inline-block;">Issued by</div>
+                            <div class="pulishername" style="display: inline-block;"><a class="name">Monowar Hussain (Librarian)
+                                </a></div>
+
+                            <div class="publish_date go" style="display: inline-block;">Issued on</div>
+                            <div class="date" style="display: inline;"><a class="name">05/01/2023</a></div>
+
+                            <div class="due" style="display: flex;">
+                                <div class="overdue go">Overdue in</div>
+                                <div class="overduein"><a class="name1">2 Days</a></div>
+                            </div>
+                        </div>
+                        <button class="renew" style="display: flex;"><span class="material-symbols-outlined"
+                                style="display: inline;">
+                                autorenew
+                            </span>
+                            <div class="renewtext" class="display:inline"></div>Renew
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- next container -->
+            <div class="upcontainer">
+                <div class="upperup">Currently issued books</div>
+            </div>
+            <div class="upperlow">
+                <!-- card1 -->
+                <div class="envelope">
+                    <div class="card">
+                        <div class="left"><img style="border-radius: 5px;" src="Rectangle 108.png" alt=""></div>
+                        <div class="right">
+
+                            <div class="book_name">5th Sem End-Sem DAA (CSE181502)</div>
+                            <div class="author">ASTU (Question Paper) - 2020</div>
+
+                            <div class="publisher go" style="display: inline-block;">Issued by</div>
+                            <div class="pulishername" style="display: inline-block;"><a class="name">Monowar Hussain
+                                    (Librarian)
+                                </a></div>
+
+                            <div class="publish_date go" style="display: inline-block;">Issued on</div>
+                            <div class="date" style="display: inline;"><a class="name">06/01/2023</a></div>
+
+                            <div class="due" style="display: flex;">
+                                <div class="overdue go">Overdue in</div>
+                                <div class="overduein"><a class="name1">3 Days</a></div>
+                            </div>
+                        </div>
+                        <button class="renew" style="display: flex;"><span class="material-symbols-outlined"
+                                style="display: inline;">
+                                autorenew
+                            </span>
+                            <div class="renewtext" class="display:inline"></div>Renew
+                        </button>
+                    </div>
+                </div>
+
+                <!-- card2 -->
+                <div class="envelope2">
+                    <div class="card">
+                        <div class="left"><img style="border-radius: 5px;" src="Rectangle 108.png" alt=""></div>
+                        <div class="right">
+
+                            <div class="book_name">6th Sem End-Sem CN (CSE181603)</div>
+                            <div class="author">ASTU (Question Paper) - 2021</div>
+
+                            <div class="publisher go" style="display: inline-block;">Issued by</div>
+                            <div class="pulishername" style="display: inline-block;"><a class="name">Vigyan Shah (Asst. Librarian)
+                                </a></div>
+
+                            <div class="publish_date go" style="display: inline-block;">Issued on</div>
+                            <div class="date" style="display: inline;"><a class="name">21/02/2023</a></div>
+
+                            <div class="due" style="display: flex;">
+                                <div class="overdue go">Overdue in</div>
+                                <div class="overduein"><a class="name1">21 Days</a></div>
+                            </div>
+                        </div>
+                        <button class="renew" style="display: flex;"><span class="material-symbols-outlined"
+                                style="display: inline;">
+                                autorenew
+                            </span>
+                            <div class="renewtext" class="display:inline"></div>Renew
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2upcontainer -->
+            <div class="upperlow">
+                <!-- card1 -->
+                <div class="envelope">
+                    <div class="card">
+                        <div class="left"><img style="border-radius: 5px;" src="Rectangle 110.png" alt=""></div>
+                        <div class="right">
+
+                            <div class="book_name">Easy Engineering</div>
+                            <div class="author">Butcher Municipal (Magazine)</div>
+
+                            <div class="publisher go" style="display: inline-block;">Issued by</div>
+                            <div class="pulishername" style="display: inline-block;"><a class="name">Deep Bhaishya (Asst. Librarian)
+                                </a></div>
+
+                            <div class="publish_date go" style="display: inline-block;">Issued on</div>
+                            <div class="date" style="display: inline;"><a class="name">01/03/2023</a></div>
+
+                            <div class="due" style="display: flex;">
+                                <div class="overdue go">Overdue in</div>
+                                <div class="overduein"><a class="name1">35 Days</a></div>
+                            </div>
+                        </div>
+                        <button class="renew" style="display: flex;"><span class="material-symbols-outlined"
+                                style="display: inline;">
+                                autorenew
+                            </span>
+                            <div class="renewtext" class="display:inline"></div>Renew
+                        </button>
+                    </div>
+                </div>
+
+                <!-- card2 -->
+                <div class="envelope2">
+                    <div class="card">
+                        <div class="left"><img style="border-radius: 5px;" src="Rectangle 111.png" alt=""></div>
+                        <div class="right">
+
+                            <div class="book_name">The Hindu - 05/03/2023(Edition)</div>
+                            <div class="author">The Hindu Group</div>
+
+                            <div class="publisher go" style="display: inline-block;">Issued by</div>
+                            <div class="pulishername" style="display: inline-block;"><a class="name">Monowar Hussain
+                                    (Librarian)
+                                </a></div>
+
+                            <div class="publish_date go" style="display: inline-block;">Issued on</div>
+                            <div class="date" style="display: inline;"><a class="name">05/03/2023</a></div>
+
+                            <div class="due" style="display: flex;">
+                                <div class="overdue go">Overdue in</div>
+                                <div class="overduein"><a class="name1">1 Day</a></div>
+                            </div>
+                        </div>
+                        <button class="renew" style="display: flex;"><span class="material-symbols-outlined"
+                                style="display: inline;">
+                                autorenew
+                            </span>
+                            <div class="renewtext" class="display:inline"></div>Renew
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+.upperlow{
+    display: grid;
+    grid-template-columns: 205px 205px 205px;
+    /* padding: 20%; */
+    column-gap: 15%;
+    row-gap: 9%;
+    padding-left: 13%;
+    padding-top: 5%;
+}
+
+.upperup{
+    font-family:sans-serif;
+font-style: normal;
+font-weight: 600;
+/* font-size: 24px; */
+font-size: 30px;
+ 
+line-height: 29px;
+
+
+
+color: #000000;
+}
+
+.book{
+width: 205px;
+height: 313px;
+
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(6, 14, 32, 0.62) 52.08%, #060E20 82.29%), url(9789390185757.jpg);
+opacity: 0.9;
+filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 10px;
+/* background-color: green; */
+background-image: url("Book\ Card\ Mini.png");
+}
+
+.writers{
+    padding-top: 3%;
+}
+.bookname{
+padding-top: 98%;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #ffffff;
+}
+.writers{
+    font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #ffffff;
+}
+.remove{
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    margin-top: 20%;
+    margin-left: 26%;
+    padding: 2%;
+    height: auto;
+    width: 48%;
+}
+.removename{
+    padding-top: 2%;
+}
+@media only screen and (max-width: 800px) {
+
+
+    .upperup{
+        font-size: 20px;
+    }
+    .upperlow{
+        display: grid;
+        grid-template-columns: 205px 205px ;
+        /* padding: 20%; */
+        column-gap: 20%;
+        row-gap: 9%;
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+
+    .upperlow{
+        display: grid;
+        grid-template-columns: 205px;
+        /* padding: 20%; */
+        /* column-gap: 10%; */
+        row-gap: 3%;
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+}
